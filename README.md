@@ -40,6 +40,7 @@ the rendering.
 | `schemes.json`| pattern data                                       |
 | `server.js`   | static file server for deployment                  |
 | `package.json`| start script for Railway and other platforms       |
+| `convert.js`  | image → pattern converter (canvas + median cut)    |
 
 ## `schemes.json` format
 
@@ -68,6 +69,19 @@ the rendering.
 - Other characters are looked up in `palette`: `hex` is the fill color, `name` is the legend label.
 - Instead of an object you can write just `"R": "#d32f2f"` — then the name = hex.
 - Rows can also be arrays: `"pattern": [[".", "R", ...], ...]`.
+
+## Image → pattern converter (this branch)
+
+Drop or pick a PNG/JPG and get a 10×10 pattern with a reduced palette:
+
+- the image is downscaled step-by-step to 10×10, averaging colors along the way;
+- colors are quantized with the **median cut** algorithm to 5–8 colors
+  (selectable), near-duplicate colors are merged;
+- letters are assigned by usage, most used color = `A`;
+- the result is rendered with the same viewer (legend, stitch counts, tooltips)
+  and can be downloaded as JSON in the `schemes.json` format.
+
+Everything runs in the browser — the file never leaves your machine.
 
 ## Viewer features
 

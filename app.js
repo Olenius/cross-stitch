@@ -34,8 +34,9 @@
 
   /* ---------- render ---------- */
 
-  function render(schemes) {
-    schemesEl.innerHTML = '';
+  function render(schemes, target) {
+    const root = target || schemesEl;
+    root.innerHTML = '';
     let totalCrosses = 0;
 
     schemes.forEach((scheme, i) => {
@@ -98,12 +99,19 @@
         });
       card.appendChild(legend);
 
-      schemesEl.appendChild(card);
+      root.appendChild(card);
     });
 
-    subtitle.textContent =
-      `${schemes.length} patterns · ${totalCrosses} stitches total · data from schemes.json`;
+    if (!target) {
+      subtitle.textContent =
+        `${schemes.length} patterns · ${totalCrosses} stitches total · data from schemes.json`;
+    }
   }
+
+  /* expose a minimal API for other scripts (e.g. the image converter) */
+  window.CrossStitch = {
+    renderPattern: (scheme, target) => render([scheme], target)
+  };
 
   /* ---------- data loading ---------- */
 
