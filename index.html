@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-Stitch Patterns</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="show-lines">
+
+  <header>
+    <div>
+      <h1>🧶 Cross-Stitch Patterns</h1>
+      <p class="subtitle" id="subtitle">loading schemes.json…</p>
+    </div>
+
+    <div class="controls">
+      <label class="ctl">
+        Cell size
+        <input type="range" id="cellSize" min="8" max="28" step="1" value="10">
+        <span id="cellSizeValue">10px</span>
+      </label>
+      <label class="ctl">
+        <input type="checkbox" id="gridLines" checked>
+        grid
+      </label>
+    </div>
+  </header>
+
+  <div id="loadError" class="error-box" hidden>
+    <strong>Failed to load <code>schemes.json</code></strong>
+    <p>
+      Most likely the page was opened directly from disk (<code>file://…</code>) —
+      the browser blocks requests to local files. Start a simple HTTP server
+      in the project folder and open the page through it:
+    </p>
+    <pre>cd cross-stitch
+python3 -m http.server 8000
+# then open http://localhost:8000</pre>
+    <p class="err-detail"></p>
+    <button id="demoBtn" type="button">Show demo patterns (random)</button>
+  </div>
+
+  <main id="schemes"></main>
+
+  <div id="tooltip" role="tooltip"></div>
+  <div id="toast" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

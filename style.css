@@ -1,0 +1,245 @@
+:root {
+  --cell: 10px;
+  --line: rgba(60, 50, 40, 0.18);
+  --bg: #f5f2ec;
+  --card-bg: #fffdf9;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% -10%, #fffefb 0%, transparent 45%),
+    var(--bg);
+  color: #3a3530;
+  min-height: 100vh;
+}
+
+/* ---------- header ---------- */
+
+header {
+  padding: 24px 24px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  margin: 5px 0 0;
+  color: #8a8177;
+  font-size: 13.5px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid #e7e1d6;
+  border-radius: 10px;
+  padding: 10px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ctl {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6f675e;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ctl input[type="range"] { accent-color: #a1887f; }
+.ctl input[type="checkbox"] { accent-color: #a1887f; }
+
+/* ---------- pattern cards ---------- */
+
+#schemes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 16px;
+  padding: 18px 24px 48px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid #e7e1d6;
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.card h2 {
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card h2 .num {
+  color: #cfc7ba;
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* stitch grid */
+
+.stitch-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), var(--cell));
+  width: max-content;
+  margin-top: 8px;
+}
+
+.cell {
+  width: var(--cell);
+  height: var(--cell);
+  cursor: pointer;
+}
+
+/* empty cell — checked "fabric" */
+.cell.empty {
+  background: repeating-conic-gradient(#f8f6f2 0% 25%, #ebe8e2 0% 50%);
+  background-size: calc(var(--cell) / 2) calc(var(--cell) / 2);
+}
+
+.cell.unknown { background: #ff00ff; } /* symbol present in pattern but missing from palette */
+
+.cell:hover {
+  outline: 1px solid #212121;
+  outline-offset: -1px;
+}
+
+/* grid lines */
+.show-lines .cell { box-shadow: inset -1px -1px 0 var(--line); }
+.show-lines .stitch-grid { border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+
+/* legend */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #6f675e;
+  background: #faf8f4;
+  border: 1px solid #eee9df;
+  border-radius: 999px;
+  padding: 2px 9px 2px 4px;
+  white-space: nowrap;
+}
+
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex: none;
+}
+
+/* ---------- load error ---------- */
+
+.error-box {
+  margin: 24px auto;
+  max-width: 560px;
+  background: #fff5f3;
+  border: 1px solid #f0c8bf;
+  border-radius: 12px;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #5d3a33;
+}
+
+.error-box pre {
+  background: #fbeeeb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  font-size: 12.5px;
+}
+
+.error-box .err-detail { color: #a0776c; font-size: 12px; }
+
+.error-box button {
+  margin-top: 6px;
+  background: #b0552f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.error-box button:hover { background: #964826; }
+
+/* ---------- tooltip and toast ---------- */
+
+#tooltip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(12px, 14px);
+  background: #33302c;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.35;
+  padding: 4px 8px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+#tooltip.visible { opacity: 0.96; }
+
+#toast {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translate(-50%, 8px);
+  background: #33302c;
+  color: #fff;
+  font-size: 12.5px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+  pointer-events: none;
+  z-index: 30;
+}
+
+#toast.visible {
+  opacity: 0.96;
+  transform: translate(-50%, 0);
+}

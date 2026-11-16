@@ -1,0 +1,1121 @@
+{
+  "meta": {
+    "description": "Demo set of 10×10 cross-stitch patterns, including a mini art gallery",
+    "gridSize": 10,
+    "emptyChar": "."
+  },
+  "schemes": [
+    {
+      "id": "heart",
+      "name": "Heart",
+      "palette": {
+        "R": {
+          "hex": "#d32f2f",
+          "name": "Red"
+        },
+        "L": {
+          "hex": "#f48fb1",
+          "name": "Pink highlight"
+        }
+      },
+      "pattern": [
+        "..........",
+        ".RR....RR.",
+        "RRRR..RRRR",
+        "RRRRRRRRRR",
+        "RRLRRRRLRR",
+        ".RRLRRLRR.",
+        "..RRRRRR..",
+        "...RRRR...",
+        "....RR....",
+        ".........."
+      ]
+    },
+    {
+      "id": "tree",
+      "name": "Christmas Tree",
+      "palette": {
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Star"
+        },
+        "G": {
+          "hex": "#43a047",
+          "name": "Green"
+        },
+        "R": {
+          "hex": "#e53935",
+          "name": "Bauble"
+        },
+        "B": {
+          "hex": "#795548",
+          "name": "Trunk"
+        }
+      },
+      "pattern": [
+        ".....Y....",
+        "....GGG...",
+        "....GYG...",
+        "...GGGGG..",
+        "....GGG...",
+        "..GGGGGGG.",
+        ".GGRGGGRGG",
+        "....BB....",
+        "....BB....",
+        ".........."
+      ]
+    },
+    {
+      "id": "flower",
+      "name": "Flower",
+      "palette": {
+        "P": {
+          "hex": "#ec407a",
+          "name": "Petals"
+        },
+        "Y": {
+          "hex": "#ffee58",
+          "name": "Center"
+        },
+        "G": {
+          "hex": "#558b2f",
+          "name": "Stem"
+        },
+        "L": {
+          "hex": "#9ccc65",
+          "name": "Leaf"
+        }
+      },
+      "pattern": [
+        "..........",
+        "...PP.....",
+        "..PYYYP...",
+        "..PYYYP...",
+        "...PP.....",
+        "....G.....",
+        "..LLG.....",
+        "....GL....",
+        "....G.....",
+        ".........."
+      ]
+    },
+    {
+      "id": "butterfly",
+      "name": "Butterfly",
+      "palette": {
+        "B": {
+          "hex": "#42a5f5",
+          "name": "Wings"
+        },
+        "A": {
+          "hex": "#b3e5fc",
+          "name": "Wings, highlight"
+        },
+        "D": {
+          "hex": "#1565c0",
+          "name": "Body"
+        }
+      },
+      "pattern": [
+        "..........",
+        "...B..B...",
+        "BBBADDBBBB",
+        "BBAADDAABB",
+        ".BBADDBBB.",
+        ".BAADDBAA.",
+        "..BADDBA..",
+        "...BDDB...",
+        "..........",
+        ".........."
+      ]
+    },
+    {
+      "id": "rainbow",
+      "name": "Rainbow",
+      "palette": {
+        "R": {
+          "hex": "#e53935",
+          "name": "Red"
+        },
+        "O": {
+          "hex": "#fb8c00",
+          "name": "Orange"
+        },
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Yellow"
+        },
+        "G": {
+          "hex": "#43a047",
+          "name": "Green"
+        },
+        "B": {
+          "hex": "#1e88e5",
+          "name": "Light blue"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Cloud"
+        }
+      },
+      "pattern": [
+        "..........",
+        "..RRRRRR..",
+        ".RROOOORR.",
+        ".ROYYYYOR.",
+        ".ROYGGYOR.",
+        ".ROYGGYOR.",
+        ".ROYBBYOR.",
+        ".ROYBBYOR.",
+        "WRW....WRW",
+        ".........."
+      ]
+    },
+    {
+      "id": "gift",
+      "name": "Gift",
+      "palette": {
+        "Y": {
+          "hex": "#ffd54f",
+          "name": "Ribbon"
+        },
+        "D": {
+          "hex": "#b71c1c",
+          "name": "Lid"
+        },
+        "R": {
+          "hex": "#e53935",
+          "name": "Box"
+        }
+      },
+      "pattern": [
+        "...Y..Y...",
+        "....YY....",
+        "..YYYYYY..",
+        ".DDDYYDDD.",
+        ".RRRYYRRR.",
+        "RRRRYYRRRR",
+        "RRRRYYRRRR",
+        "RRRRYYRRRR",
+        "RRRRYYRRRR",
+        ".........."
+      ]
+    },
+    {
+      "id": "cat",
+      "name": "Cat",
+      "palette": {
+        "K": {
+          "hex": "#37474f",
+          "name": "Fur"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Face"
+        },
+        "G": {
+          "hex": "#7cb342",
+          "name": "Eyes"
+        },
+        "P": {
+          "hex": "#f48fb1",
+          "name": "Nose"
+        }
+      },
+      "pattern": [
+        ".K......K.",
+        ".KK....KK.",
+        ".KKKKKKKK.",
+        "KKKKKKKKKK",
+        "KKGKKKKGKK",
+        "KKKWWWWKKK",
+        "KKKWPPWKKK",
+        ".KKWWWWKK.",
+        "..KKKKKK..",
+        ".........."
+      ]
+    },
+    {
+      "id": "duck",
+      "name": "Duckling",
+      "palette": {
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Body"
+        },
+        "A": {
+          "hex": "#f9a825",
+          "name": "Wing"
+        },
+        "O": {
+          "hex": "#fb8c00",
+          "name": "Beak"
+        },
+        "K": {
+          "hex": "#263238",
+          "name": "Eye"
+        },
+        "B": {
+          "hex": "#4fc3f7",
+          "name": "Water"
+        },
+        "D": {
+          "hex": "#0288d1",
+          "name": "Deep water"
+        }
+      },
+      "pattern": [
+        "..........",
+        "...YYY....",
+        ".OOYKY....",
+        ".OOYYY....",
+        "...YYY..YY",
+        "..YYAAYYYY",
+        "..YAAAAYY.",
+        "...YYYYY..",
+        "BBBBBBBBBB",
+        "DDDDDDDDDD"
+      ]
+    },
+    {
+      "id": "landscape-tree",
+      "name": "Landscape with a Tree",
+      "palette": {
+        "S": {
+          "hex": "#b3e5fc",
+          "name": "Sky"
+        },
+        "N": {
+          "hex": "#fdd835",
+          "name": "Sun"
+        },
+        "D": {
+          "hex": "#2e7d32",
+          "name": "Crown"
+        },
+        "T": {
+          "hex": "#6d4c41",
+          "name": "Trunk"
+        },
+        "H": {
+          "hex": "#a5d6a7",
+          "name": "Hill"
+        },
+        "G": {
+          "hex": "#66bb6a",
+          "name": "Grass"
+        },
+        "E": {
+          "hex": "#388e3c",
+          "name": "Ground"
+        }
+      },
+      "pattern": [
+        "SSSSSSSNNN",
+        "SSSSSSSNNN",
+        "SDDDDDDNNN",
+        "SDDDDDDSSS",
+        "SDDDDDDSSS",
+        "SSDDDDSSSS",
+        "SSSTTSSHHH",
+        "SSSTTGGHHH",
+        "GGGTTGGHHH",
+        "EEEEEEEEEE"
+      ]
+    },
+    {
+      "id": "simple-tree",
+      "name": "Just a Tree",
+      "palette": {
+        "D": {
+          "hex": "#2e7d32",
+          "name": "Crown"
+        },
+        "L": {
+          "hex": "#7cb342",
+          "name": "Highlight"
+        },
+        "T": {
+          "hex": "#795548",
+          "name": "Trunk"
+        }
+      },
+      "pattern": [
+        "....DD....",
+        "..DDDDDD..",
+        ".DDDDDDDD.",
+        ".DLLLDDDD.",
+        "DDLLDDDDDD",
+        ".DDDDDDDD.",
+        "....TT....",
+        "....TT....",
+        "...TTTT...",
+        ".........."
+      ]
+    },
+    {
+      "id": "seascape",
+      "name": "Seascape",
+      "palette": {
+        "S": {
+          "hex": "#b3e5fc",
+          "name": "Sky"
+        },
+        "N": {
+          "hex": "#fdd835",
+          "name": "Sun"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Sail"
+        },
+        "T": {
+          "hex": "#5d4037",
+          "name": "Mast"
+        },
+        "R": {
+          "hex": "#b71c1c",
+          "name": "Hull"
+        },
+        "B": {
+          "hex": "#4fc3f7",
+          "name": "Sea"
+        },
+        "D": {
+          "hex": "#0288d1",
+          "name": "Waves"
+        }
+      },
+      "pattern": [
+        "SSSSSSSSNN",
+        "SSSSSSSTNN",
+        "SSSSWWWTSS",
+        "SSWWWWWTSS",
+        "BBBBBBBTBB",
+        "BBRRRRRRRB",
+        "BBBDBBBDBB",
+        "BDBBBBDBBB",
+        "BBBDBBBDBB",
+        "DDDDDDDDDD"
+      ]
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "palette": {
+        "P": {
+          "hex": "#4527a0",
+          "name": "Sky, top"
+        },
+        "U": {
+          "hex": "#7e57c2",
+          "name": "Sky"
+        },
+        "R": {
+          "hex": "#ec407a",
+          "name": "Sky, sunset"
+        },
+        "O": {
+          "hex": "#ff7043",
+          "name": "Sky at the horizon"
+        },
+        "N": {
+          "hex": "#fdd835",
+          "name": "Sun"
+        },
+        "K": {
+          "hex": "#3e2723",
+          "name": "Hills and tree"
+        }
+      },
+      "pattern": [
+        "PPPPPPPPPP",
+        "UUUUUUUUUU",
+        "RRRRRRNNRR",
+        "RRRRRNNNNR",
+        "OOKOONNNNO",
+        "OKKOOONNOO",
+        "KKKKKKKOOO",
+        "KKKKKKKKKK",
+        "KKKKKKKKKK",
+        "KKKKKKKKKK"
+      ]
+    },
+    {
+      "id": "locomotive-landscape",
+      "name": "Landscape with a Locomotive",
+      "palette": {
+        "S": {
+          "hex": "#b3e5fc",
+          "name": "Sky"
+        },
+        "N": {
+          "hex": "#fdd835",
+          "name": "Sun"
+        },
+        "C": {
+          "hex": "#cfd8dc",
+          "name": "Smoke"
+        },
+        "K": {
+          "hex": "#37474f",
+          "name": "Wheels and chimney"
+        },
+        "D": {
+          "hex": "#b71c1c",
+          "name": "Cab"
+        },
+        "W": {
+          "hex": "#fff59d",
+          "name": "Window"
+        },
+        "R": {
+          "hex": "#e53935",
+          "name": "Boiler"
+        },
+        "T": {
+          "hex": "#757575",
+          "name": "Rails"
+        },
+        "G": {
+          "hex": "#66bb6a",
+          "name": "Grass"
+        }
+      },
+      "pattern": [
+        "SSCCSSSSNN",
+        "SSSCCCSSNN",
+        "SSSSSCCSSS",
+        "SKKKKSSKSS",
+        "SDWWDRRKSS",
+        "SDWWDRRRRS",
+        "SDDDDRRRRS",
+        "SKKSKKSKKS",
+        "TTTTTTTTTT",
+        "GGGGGGGGGG"
+      ]
+    },
+    {
+      "id": "vangogh-sunflowers",
+      "name": "Sunflowers (Van Gogh)",
+      "palette": {
+        "S": {
+          "hex": "#b2dfdb",
+          "name": "Background"
+        },
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Petals"
+        },
+        "O": {
+          "hex": "#f9a825",
+          "name": "Petals, shade"
+        },
+        "K": {
+          "hex": "#4e342e",
+          "name": "Centers"
+        },
+        "G": {
+          "hex": "#558b2f",
+          "name": "Stems"
+        },
+        "A": {
+          "hex": "#d4a017",
+          "name": "Vase"
+        },
+        "D": {
+          "hex": "#827717",
+          "name": "Vase, shade"
+        }
+      },
+      "pattern": [
+        "SSSSYOYSSS",
+        "YOYSOKOYOY",
+        "OKOSYOYOKO",
+        "YOYSSGSYOY",
+        "SGGSSGSGGS",
+        "SSGSSGSGSS",
+        "SSAAAAAASS",
+        "SSSAAAASSS",
+        "SSDAAAADSS",
+        "SSSAAAASSS"
+      ]
+    },
+    {
+      "id": "vangogh-starry-night",
+      "name": "The Starry Night (Van Gogh)",
+      "palette": {
+        "D": {
+          "hex": "#1a237e",
+          "name": "Sky, deep"
+        },
+        "B": {
+          "hex": "#3949ab",
+          "name": "Sky"
+        },
+        "W": {
+          "hex": "#b0bec5",
+          "name": "Swirls"
+        },
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Stars and moon"
+        },
+        "C": {
+          "hex": "#12291b",
+          "name": "Cypress"
+        },
+        "V": {
+          "hex": "#455a64",
+          "name": "Village"
+        },
+        "H": {
+          "hex": "#0d1550",
+          "name": "Hills"
+        }
+      },
+      "pattern": [
+        "BBBDDBBWYY",
+        "BBWBBWYBBY",
+        "BWBBBWWBBB",
+        "CWBYBBBWBB",
+        "CCBBWBYBWB",
+        "CCBBBWBBBB",
+        "CCDBBVHHHH",
+        "CCVYVVVYVH",
+        "CCVVVVVVVV",
+        "CCVVVVVVVV"
+      ]
+    },
+    {
+      "id": "mona-lisa",
+      "name": "Mona Lisa (Leonardo da Vinci)",
+      "palette": {
+        "S": {
+          "hex": "#7d9b76",
+          "name": "Background, sfumato"
+        },
+        "H": {
+          "hex": "#4e342e",
+          "name": "Hair"
+        },
+        "F": {
+          "hex": "#d7a26b",
+          "name": "Face"
+        },
+        "K": {
+          "hex": "#263238",
+          "name": "Eyes"
+        },
+        "E": {
+          "hex": "#9c6b45",
+          "name": "Smile shadow"
+        },
+        "D": {
+          "hex": "#3b4a3a",
+          "name": "Dress"
+        }
+      },
+      "pattern": [
+        "SSHHHHHHSS",
+        "SHHFFFFHHS",
+        "SHFKFFKFHS",
+        "SHFFFFFFHS",
+        "SHFFEEFFHS",
+        "SHHFFFFHHS",
+        "SHDDDDDDHS",
+        "SDDDDDDDDS",
+        "SDDFFFFDDS",
+        "SSDDDDDDSS"
+      ]
+    },
+    {
+      "id": "the-scream",
+      "name": "The Scream (Munch)",
+      "palette": {
+        "O": {
+          "hex": "#fb8c00",
+          "name": "Sky"
+        },
+        "R": {
+          "hex": "#e53935",
+          "name": "Sky, swirls"
+        },
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Sunset"
+        },
+        "K": {
+          "hex": "#1c2b36",
+          "name": "Figure"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Face"
+        },
+        "B": {
+          "hex": "#0d1b24",
+          "name": "Water"
+        }
+      },
+      "pattern": [
+        "OROOYOOROO",
+        "OOYOOROOYO",
+        "OOROOYOOOR",
+        "OOOKWWKOOO",
+        "OOKWWWWWKO",
+        "OOKWKKKWKO",
+        "OOOKWWKOOO",
+        "OOOKKKKOOO",
+        "OOKKKKKKOO",
+        "BBBBBBBBBB"
+      ]
+    },
+    {
+      "id": "girl-with-pearl-earring",
+      "name": "Girl with a Pearl Earring (Vermeer)",
+      "palette": {
+        "K": {
+          "hex": "#23272b",
+          "name": "Background"
+        },
+        "T": {
+          "hex": "#1565c0",
+          "name": "Turban"
+        },
+        "Y": {
+          "hex": "#fdd835",
+          "name": "Turban, cloth"
+        },
+        "F": {
+          "hex": "#e0ac69",
+          "name": "Face"
+        },
+        "M": {
+          "hex": "#a1495d",
+          "name": "Lips"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Collar and pearl"
+        },
+        "D": {
+          "hex": "#3e2f23",
+          "name": "Jacket"
+        }
+      },
+      "pattern": [
+        "KKTTTTTTKK",
+        "KTTTTTTTTK",
+        "KTTTTTTTYK",
+        "KKTFFFFTKK",
+        "KTFKFFKFTK",
+        "KKFFMMFFKK",
+        "KKFFFFFWKK",
+        "KKKFFFKKKK",
+        "KDWWWWWWDK",
+        "KDDDDDDDDK"
+      ]
+    },
+    {
+      "id": "monet-impression",
+      "name": "Impression, Sunrise (Monet)",
+      "palette": {
+        "S": {
+          "hex": "#6b7f8e",
+          "name": "Sky, mist"
+        },
+        "C": {
+          "hex": "#cfd8dc",
+          "name": "Haze"
+        },
+        "N": {
+          "hex": "#f4511e",
+          "name": "Sun"
+        },
+        "R": {
+          "hex": "#f47340",
+          "name": "Sun reflection"
+        },
+        "W": {
+          "hex": "#546e7a",
+          "name": "Water"
+        },
+        "B": {
+          "hex": "#37474f",
+          "name": "Boats"
+        }
+      },
+      "pattern": [
+        "SSCSSSCSSS",
+        "SCSSSSSSCS",
+        "SSSSSNSSSS",
+        "SSCSSSSSSC",
+        "WWBWWRWWWW",
+        "WBBBWRWWWW",
+        "WWWWWRWBBW",
+        "WWWRWRWWWW",
+        "WWWWRRWWWW",
+        "WWWWWWWWWW"
+      ]
+    },
+    {
+      "id": "monet-water-lilies",
+      "name": "Water Lilies (Monet)",
+      "palette": {
+        "L": {
+          "hex": "#81c784",
+          "name": "Pond"
+        },
+        "A": {
+          "hex": "#aed581",
+          "name": "Lily pads"
+        },
+        "P": {
+          "hex": "#f06292",
+          "name": "Pink lily"
+        },
+        "W": {
+          "hex": "#f1f8e9",
+          "name": "White flower"
+        },
+        "G": {
+          "hex": "#2e7d32",
+          "name": "Dark water"
+        }
+      },
+      "pattern": [
+        "LLLLLLLLLL",
+        "LLALLLLLLA",
+        "LLLLWWLLLL",
+        "LLAAWWAALL",
+        "APPLLLLLLL",
+        "LLLLLLLPPL",
+        "LLLLLAAPLL",
+        "LWWLLLLLLL",
+        "AWWALLLLLL",
+        "GGGGGGGGGG"
+      ]
+    },
+    {
+      "id": "klimt-kiss",
+      "name": "The Kiss (Klimt)",
+      "palette": {
+        "G": {
+          "hex": "#d4a017",
+          "name": "Gold"
+        },
+        "A": {
+          "hex": "#f9d976",
+          "name": "Gold, highlight"
+        },
+        "K": {
+          "hex": "#263238",
+          "name": "Man's robe"
+        },
+        "F": {
+          "hex": "#e0ac69",
+          "name": "Skin"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Dress"
+        },
+        "R": {
+          "hex": "#c62828",
+          "name": "Flowers on the dress"
+        }
+      },
+      "pattern": [
+        "GAGGGAGGAG",
+        "GGGAGGGGAG",
+        "GGGGKFFGGG",
+        "GGGKKFFWGG",
+        "GGKKKFFWWG",
+        "GGKKKWWWWR",
+        "GGKKWWWWRW",
+        "GGKWWWWRWW",
+        "GGKWWRRWWW",
+        "GAGRGRAGRG"
+      ]
+    },
+    {
+      "id": "dali-memory",
+      "name": "The Persistence of Memory (Dalí)",
+      "palette": {
+        "S": {
+          "hex": "#a8c0cf",
+          "name": "Sky"
+        },
+        "M": {
+          "hex": "#5d6d7e",
+          "name": "Cliffs and shadow"
+        },
+        "D": {
+          "hex": "#c8a061",
+          "name": "Desert"
+        },
+        "T": {
+          "hex": "#5d4037",
+          "name": "Tree"
+        },
+        "K": {
+          "hex": "#eceff1",
+          "name": "Clock faces"
+        },
+        "C": {
+          "hex": "#37474f",
+          "name": "Clock hands"
+        }
+      },
+      "pattern": [
+        "SSSSSSSSSS",
+        "SSSSSSSSSS",
+        "SSSSSSSSMM",
+        "SSSTSSSMMM",
+        "SSTTSSSMDD",
+        "STKKKKKKTS",
+        "SSKCCKKSSS",
+        "DDDKCCKDDD",
+        "DDDDDDDDDD",
+        "MMMMMMMMMM"
+      ]
+    },
+    {
+      "id": "malevich-black-square",
+      "name": "Black Square (Malevich)",
+      "palette": {
+        "W": {
+          "hex": "#f5f5f5",
+          "name": "Canvas"
+        },
+        "K": {
+          "hex": "#111111",
+          "name": "Black"
+        },
+        "R": {
+          "hex": "#8e2424",
+          "name": "Underpainting in a crack"
+        },
+        "G": {
+          "hex": "#3d6b3f",
+          "name": "Underpainting in a crack"
+        }
+      },
+      "pattern": [
+        "WWWWWWWWWW",
+        "WKKKKKKKKW",
+        "WKKKKKKKKW",
+        "WKKKKKKKKW",
+        "WKKKRKKKKW",
+        "WKKKKKKKKW",
+        "WKKKKGKKKW",
+        "WKKKKKKKKW",
+        "WKKKKKKKKW",
+        "WWWWWWWWWW"
+      ]
+    },
+    {
+      "id": "aivazovsky-ninth-wave",
+      "name": "The Ninth Wave (Aivazovsky)",
+      "palette": {
+        "S": {
+          "hex": "#f7e2b0",
+          "name": "Sunrise sky"
+        },
+        "N": {
+          "hex": "#fdd835",
+          "name": "Sun"
+        },
+        "T": {
+          "hex": "#2e8b9a",
+          "name": "Wave"
+        },
+        "L": {
+          "hex": "#7ac0cc",
+          "name": "Wave, translucent"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Foam"
+        },
+        "D": {
+          "hex": "#1a5f7a",
+          "name": "Sea"
+        },
+        "B": {
+          "hex": "#263238",
+          "name": "Ship"
+        }
+      },
+      "pattern": [
+        "SSSSSSSSSS",
+        "SSSSSSSSNN",
+        "TTSSSSSSNN",
+        "TTTTSSSSSS",
+        "TTTTTSSSSS",
+        "TTTTTTTWSS",
+        "TTTTTTTWWS",
+        "TTLLLLLWWT",
+        "TTTLLWWWBB",
+        "DDDDDDDDDD"
+      ]
+    },
+    {
+      "id": "shishkin-morning",
+      "name": "Morning in a Pine Forest (Shishkin)",
+      "palette": {
+        "F": {
+          "hex": "#dfe8df",
+          "name": "Fog"
+        },
+        "P": {
+          "hex": "#2e5d34",
+          "name": "Pine crowns"
+        },
+        "T": {
+          "hex": "#6d4c41",
+          "name": "Trunks"
+        },
+        "L": {
+          "hex": "#795548",
+          "name": "Fallen tree"
+        },
+        "B": {
+          "hex": "#8d6e63",
+          "name": "Bear cubs"
+        }
+      },
+      "pattern": [
+        "FPPFPPFPPF",
+        "PFFFFFFFPP",
+        "TFTTFFTFTT",
+        "TFTTFFTFTT",
+        "TFTBFFBFTT",
+        "LLBBLLBBLL",
+        "LLLLLLLLLL",
+        "FFFFFFFFFF",
+        "FFFFFFFFFF",
+        "FFFFFFFFFF"
+      ]
+    },
+    {
+      "id": "botticelli-venus",
+      "name": "The Birth of Venus (Botticelli)",
+      "palette": {
+        "S": {
+          "hex": "#bfe0ef",
+          "name": "Sky"
+        },
+        "R": {
+          "hex": "#ec407a",
+          "name": "Roses"
+        },
+        "H": {
+          "hex": "#c8963c",
+          "name": "Venus's hair"
+        },
+        "F": {
+          "hex": "#f0c8a0",
+          "name": "Venus"
+        },
+        "C": {
+          "hex": "#d49a8a",
+          "name": "Shell"
+        },
+        "A": {
+          "hex": "#4a90c4",
+          "name": "Sea"
+        },
+        "W": {
+          "hex": "#eceff1",
+          "name": "Foam"
+        }
+      },
+      "pattern": [
+        "SSSSSSSSSS",
+        "SSRSSSRSSS",
+        "SSSSHHSSSS",
+        "SSSHFFFHSS",
+        "SSHFFFFHSS",
+        "SSHFFFFHSS",
+        "SHHFFFFHHS",
+        "SSHHFFHHSS",
+        "SSCCCCCCSS",
+        "AAWAAWAAWW"
+      ]
+    },
+    {
+      "id": "hopper-nighthawks",
+      "name": "Nighthawks (Hopper)",
+      "palette": {
+        "K": {
+          "hex": "#14141f",
+          "name": "Night"
+        },
+        "M": {
+          "hex": "#3e2b26",
+          "name": "Brick"
+        },
+        "Y": {
+          "hex": "#f5c842",
+          "name": "Window light"
+        },
+        "A": {
+          "hex": "#ffe9a8",
+          "name": "Window, light"
+        },
+        "B": {
+          "hex": "#3a2f28",
+          "name": "Customers"
+        }
+      },
+      "pattern": [
+        "KKKKKKKKKK",
+        "KKMMMMMMKK",
+        "KKYYYYYYKK",
+        "KYYBYYBYKK",
+        "KYYBBYBBYK",
+        "KYYYYYYYYK",
+        "KYAAYYAAYK",
+        "KKYYYYYYKK",
+        "KKMMMMMMKK",
+        "KKKKKKKKKK"
+      ]
+    },
+    {
+      "id": "matisse-dance",
+      "name": "Dance (Matisse)",
+      "palette": {
+        "S": {
+          "hex": "#4e7fb5",
+          "name": "Sky"
+        },
+        "R": {
+          "hex": "#cc3524",
+          "name": "Dancers"
+        },
+        "G": {
+          "hex": "#3f9142",
+          "name": "Hill"
+        },
+        "D": {
+          "hex": "#2e6b31",
+          "name": "Hill, shade"
+        }
+      },
+      "pattern": [
+        "SSSSSSSSSS",
+        "SSRRSSRRSS",
+        "SRSSRRSSRS",
+        "SRSRSSSRSR",
+        "SRSRSSSRSR",
+        "SSRSSSSRSS",
+        "SSSRSSRSSS",
+        "GGGRGGRGGG",
+        "GGGGGGGGGG",
+        "DDDDDDDDDD"
+      ]
+    }
+  ]
+}
