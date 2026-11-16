@@ -75,8 +75,8 @@ the rendering.
 Drop or pick a PNG/JPG and get a 10×10 pattern with a reduced palette:
 
 - the image is downscaled step-by-step to 10×10, averaging colors along the way;
-- colors are quantized with the **median cut** algorithm to 5–8 colors
-  (selectable), near-duplicate colors are merged;
+- colors are quantized with the **median cut** algorithm to 2–10 colors
+  (slider), near-duplicate colors are merged;
 - letters are assigned by usage, most used color = `A`;
 - the result is rendered with the same viewer (legend, stitch counts, tooltips)
   and can be downloaded as JSON in the `schemes.json` format.

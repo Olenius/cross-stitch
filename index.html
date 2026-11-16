@@ -31,18 +31,14 @@
     <h2>🖼️ Image → 10×10 pattern</h2>
     <p class="conv-hint">
       Upload a PNG or JPG — the image is scaled down with color averaging and
-      reduced to a 5–8 color palette. Everything runs locally in your browser;
+      reduced to a 2–10 color palette. Everything runs locally in your browser;
       the file is never uploaded anywhere.
     </p>
     <div class="conv-controls">
       <label class="ctl">
         Colors
-        <select id="colorCount">
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7" selected>7</option>
-          <option value="8">8</option>
-        </select>
+        <input type="range" id="colorCount" min="2" max="10" step="1" value="7">
+        <span id="colorCountValue">7</span>
       </label>
     </div>
     <div id="dropZone" class="drop-zone" tabindex="0" role="button"

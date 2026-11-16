@@ -191,6 +191,8 @@ h1 {
   accent-color: #a1887f;
 }
 
+.conv-controls input[type="range"] { accent-color: #a1887f; }
+
 .drop-zone {
   border: 2px dashed #cfc7ba;
   border-radius: 10px;

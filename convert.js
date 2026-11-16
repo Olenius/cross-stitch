@@ -10,6 +10,7 @@
   const dropZone = document.getElementById('dropZone');
   const fileInput = document.getElementById('fileInput');
   const colorCount = document.getElementById('colorCount');
+  const colorCountValue = document.getElementById('colorCountValue');
   const statusEl = document.getElementById('convStatus');
   const resultEl = document.getElementById('convResult');
   const previewEl = document.getElementById('convPreview');
@@ -249,7 +250,8 @@
     if (file) loadImage(file);
   });
 
-  colorCount.addEventListener('change', () => {
+  colorCount.addEventListener('input', () => {
+    colorCountValue.textContent = colorCount.value;
     if (current) rerender();
   });
 
